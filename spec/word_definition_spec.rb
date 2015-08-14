@@ -26,6 +26,15 @@ describe('#save') do
   end
 end
 
+describe(".clear") do
+  it("empties out all of the saved words") do
+    test_word = Word.new("Amazing")
+    test_word.save()
+    Word.clear()
+    expect(Word.all()).to(eq([]))
+  end
+end
+
 
 
 

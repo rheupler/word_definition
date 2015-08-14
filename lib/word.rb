@@ -19,6 +19,10 @@ class Word
     @@words
   end
 
+  define_singleton_method(:clear) do
+  @@dealerships.clear()
+end
+
   def save
     @@words.push(self)
   end
