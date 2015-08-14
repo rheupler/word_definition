@@ -14,10 +14,12 @@
   font-size: 250%;
   padding-top: 65px;
   padding-bottom: 65px;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.1em;
 }
 
 body {
-  background-color: #DBD0CC;
+  background-color: #6C8F8F;
   /*padding-top: 70px;*/
 }
 
@@ -40,6 +42,7 @@ li {
   margin: 10px 50px 50px 0px;
   height: 250px;
   box-shadow: 10px 10px 5px #888888;
+  background-color: #D0DBDB;
 }
 
 .block2 {
@@ -51,6 +54,7 @@ li {
   margin: 10px 50px 50px 10px;
   height: 250px;
   box-shadow: 10px 10px 5px #888888;
+  color: #4B7A7A;
 }
 
 .block3 {
@@ -72,6 +76,7 @@ li {
 
 .block-text {
   margin: 50px 10px 10px 20px;
+  overflow: hidden;
 }
 
 .row {
