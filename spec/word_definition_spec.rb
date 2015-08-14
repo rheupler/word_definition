@@ -63,8 +63,9 @@ describe('Definition') do
 
   describe("#year") do
     it("returns the definition") do
-      test_definition = Definition.new("Being cool")
+      test_definition = Definition.new("Being really cool")
       test_definition.save()
       expect(test_definition.definition()).to(eq("Being really cool"))
     end
+  end
 end
