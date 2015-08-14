@@ -35,6 +35,15 @@ describe(".clear") do
   end
 end
 
+describe('.find') do
+  it('finds the word by its id number') do
+    test_word = Word.new("Amazing")
+    test_word.save()
+    test_word2 = Word.new("Cool").save()
+    expect(Word.find(test_word.id())).to(eq(test_word))
+  end
+end
+
 
 
 
