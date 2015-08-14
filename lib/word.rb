@@ -5,6 +5,11 @@ class Word
   def initialize(word_name)
     @word_name = word_name
     @id = @@words.length().+1
+    @meaning = []
+  end
+
+  def meaning
+    @meaning
   end
 
   def word_name
@@ -28,13 +33,17 @@ end
   end
 
   define_singleton_method(:find) do |identification|
-  found_word = nil
-  @@words.each() do |word|
-    if word.id() == identification.to_i
-      found_word = word
+    found_word = nil
+    @@words.each() do |word|
+      if word.id() == identification.to_i
+        found_word = word
+      end
     end
+      found_word
   end
-  found_word
-end
+
+  def add_definition(definition)
+    @meaning.push(definition)
+  end
 
 end #end of class
