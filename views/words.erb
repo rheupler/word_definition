@@ -1,0 +1,7 @@
+<h1>Here are your words</h1>
+
+<ul>
+  <% @words.each() do |word| %>
+    <li><a href='/words/<%= word.id() %>'><%= word.word_name() %></a></li>
+  <% end %>
+</ul>
