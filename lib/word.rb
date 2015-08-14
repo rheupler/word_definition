@@ -20,7 +20,7 @@ class Word
   end
 
   define_singleton_method(:clear) do
-  @@dealerships.clear()
+  @@words.clear()
 end
 
   def save
