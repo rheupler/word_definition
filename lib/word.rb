@@ -15,4 +15,12 @@ class Word
     @id
   end
 
+  define_singleton_method(:all) do
+    @@words
+  end
+
+  def save
+    @@words.push(self)
+  end
+
 end #end of class

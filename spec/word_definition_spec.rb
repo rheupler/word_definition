@@ -18,6 +18,14 @@ describe('#id') do
   end
 end
 
+describe('#save') do
+  it('adds word to array of saved words') do
+    test_word = Word.new("Cool")
+    test_word.save()
+    expect(Word.all()).to(eq([test_word]))
+  end
+end
+
 
 
 
