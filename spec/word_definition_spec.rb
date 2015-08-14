@@ -11,6 +11,13 @@ describe(Word) do
   end
 end
 
+describe('#id') do
+  it('returns the id of word') do
+    test_word = Word.new("Awesome")
+    expect(test_word.id()).to(eq(1))
+  end
+end
+
 
 
 
