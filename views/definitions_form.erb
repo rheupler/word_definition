@@ -1,8 +1,14 @@
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="/words">Words</a></li>
+  <li class="active">Add Definition</li>
+</ol>
+
 <h1>Add a definition:</h1>
 
 <form action="/definitions" method="post">
   <label for="definition">Definition:</label>
-  <input id="definition" name="definition" type="text">
-
-  <button type="submit">Add Definition</button>
+  <input id="definition" class='form-control' name="definition" type="text x-webkit-speech">
+  <br>
+  <button class='btn btn-default' type="submit">Add Definition</button>
 </form>

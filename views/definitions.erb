@@ -1,8 +1,14 @@
-<h1>Definitions</h1>
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="/words">Words</a></li>
+  <li class="active">Definitions</li>
+</ol>
 
-<h3>Here are all the definitions for this word </h3>
+<h1>Here are all the definitions for this word: </h1>
 <ul>
+  <br>
   <% @definitions.each() do |definition| %>
-  <li><a href="/definitions/<%= definition.id() %>"><%= definition.definition() %></a></li>
+  <li class="list-group-item"><%= definition.definition() %></a></li><br>
   <% end %>
+  <li><a class="btn btn-primary btn-lg" href="/words">Back to words</a></li>
 </ul>

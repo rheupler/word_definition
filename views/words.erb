@@ -1,7 +1,14 @@
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li class="active">Words</li>
+</ol>
+
 <h2>Here are your words</h2>
 
 <ul>
   <% @words.each() do |word| %>
-    <li><br><a class="btn btn-info btn-md" href='/words/<%= word.id() %>'><%= word.word_name() %></a></li>
+    <li><br><a class="btn btn-info btn-lg" href='/words/<%= word.id() %>'><%= word.word_name() %></a></li>
   <% end %>
+
+
 </ul>
