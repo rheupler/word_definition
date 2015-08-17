@@ -7,8 +7,8 @@
 
 <h3>Here are all the definitions for '<%= @word.word_name() %>'</h3>
 
-<ul><% @word.meaning().each() do |definition| %>
-  <li><a class="btn btn-default btn-lg" href="/definitions/<%=definition.id() %>"> <%= definition.definition() %> </a></li>
+<ul><% @word.meanings().each() do |definition| %>
+  <li><%= definition.definition() %></li>
   <% end %>
 </ul>
 <br>

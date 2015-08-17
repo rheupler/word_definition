@@ -5,11 +5,11 @@ class Word
   def initialize(word_name)
     @word_name = word_name
     @id = @@words.length().+1
-    @meaning = []
+    @meanings = [] # pluralized array name to make it clearer, since it will hold multiple definitions
   end
 
-  def meaning
-    @meaning
+  def meanings
+    @meanings
   end
 
   def word_name
@@ -25,8 +25,8 @@ class Word
   end
 
   define_singleton_method(:clear) do
-  @@words.clear()
-end
+    @@words.clear() # fixed indentation
+  end # fixed indentation
 
   def save
     @@words.push(self)
@@ -39,11 +39,11 @@ end
         found_word = word
       end
     end
-      found_word
+    found_word # fixed indentation
   end
 
   def add_definition(definition)
-    @meaning.push(definition)
+    @meanings.push(definition)
   end
 
 end #end of class

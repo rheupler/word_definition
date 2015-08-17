@@ -53,7 +53,7 @@ describe(Word) do
       test_word = Word.new("Awesome")
       test_definition = Definition.new("Being really cool")
       test_word.add_definition(test_definition)
-      expect(test_word.meaning()).to(eq([test_definition]))
+      expect(test_word.meanings()).to(eq([test_definition]))
     end
   end
 
@@ -61,10 +61,10 @@ end #end of spec
 
 describe('Definition') do
 
-  describe("#year") do
+  describe("#year") do # year???
     it("returns the definition") do
       test_definition = Definition.new("Being really cool")
-      test_definition.save()
+      # test_definition.save() # for this exercise definition only needs to be added to word, not saved on its own
       expect(test_definition.definition()).to(eq("Being really cool"))
     end
   end
